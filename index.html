@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sneakerHead</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href = "index.html">.sneakerHead</a>
+            </div>
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+            </ul>
+            <input type="search" class="search-bar" placeholder="Search" id="searched_content">
+            <button class="search" id="search"> <i class = "fa fa-search"></i> </button>
+        </nav>
+    </header>
+    <main>
+        <div class="box1">
+            <div class="wrt">
+                <p class="name">sneakerHead</p>
+                <p class="descp">Your one Stop Destination for Premium Quality Sneakers</p>
+                <p class="descp2"> Dive into our curated collection of the latest trends and timeless classics, meticulously selected to satisfy every style palette. Explore our extensive range and step into a world where comfort meets culture.</p>
+            </div>
+            <img src="utils/out-0(1).png" alt="" class="main-img">
+        </div>
+        <div class="white-box">
+            <div class="slider-container">
+                <div class="slider">
+                  <img src="https://cms-cdn.thesolesupplier.co.uk/2022/07/aj1-shattered-backboard-factory-flaw-freaky-blink.png.webp" alt="Image 1">
+                  <img src="https://media.gq.com/photos/654933b13a3d7eec5b8a1f0d/master/pass/jordans.jpg" alt="Image 2">
+                  <img src="https://i.pinimg.com/originals/9c/f5/56/9cf5567e770cb28096371f909296ac0e.jpg" alt="Image 3">
+                  <img src="https://sneakerfortress.com/wp-content/uploads/2023/11/Nike-Air-Jordan-1-Black-Toe.jpg" alt="Image 4">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+              </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="imgslider.js"></script>
+</body>
+</html>
