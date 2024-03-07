@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -21,6 +23,9 @@
                 <li>Women</li>
                 <li>Kids</li>
             </ul>
+            <button id="modeswitch" onclick = "switchMode()">
+                <i class="fa fa-adjust" id="switch-color"></i>
+            </button>
             <input type="search" class="search-bar" placeholder="Search" id="searched_content">
             <button class="search" id="search"> <i class = "fa fa-search"></i> </button>
         </nav>
@@ -35,6 +40,7 @@
             <img src="utils/out-0(1).png" alt="" class="main-img">
         </div>
         <div class="white-box">
+            <p>Stride with confidence in sneakerHead kicks</p>
             <div class="slider-container">
                 <div class="slider">
                   <img src="https://cms-cdn.thesolesupplier.co.uk/2022/07/aj1-shattered-backboard-factory-flaw-freaky-blink.png.webp" alt="Image 1">
@@ -47,7 +53,9 @@
               </div>
         </div>
     </main>
-    <script src="app.js"></script>
+    <script src="Sneaker.js"></script>
+    <script src="sneaks.controllers.js"></script>
+    <script src="darkmode.js"></script>
     <script src="imgslider.js"></script>
 </body>
 </html>
