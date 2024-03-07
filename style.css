@@ -2,11 +2,12 @@
     margin:0;
     padding:0;
     font-family: "Montserrat", sans-serif;    
-    color:white;
+    color:#333333;
     /* font-weight: 500; */
+    transition-duration: 0.3s;
 }
 body{
-    background-color: #333333;
+    background-color: #fff;
     /* background-color: #C35214; */
     /* background-color: #E68000; */
     /* background-color: #720e9e; */
@@ -37,17 +38,18 @@ nav ul li{
 }
 nav ul li:hover{
     font-weight:600;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #333333;
 }
 .logo a{
+    color:#333;
     text-decoration:0;
     font-size:40px;
     font-weight: 900;
     font-style: italic;
 }
 .search-bar{
-    margin-left:390px;
-    margin-top: 11px;
+    margin-left:30px;
+    margin-top: 15px;
     height:35px;
     width:181px;
     color:black;
@@ -56,8 +58,12 @@ nav ul li:hover{
 }
 nav{
     input[type=search]{
+        transition-duration: 0.3s;
+        border: 2px solid #555;
         padding-left:10px;
         &:focus{
+            background-color: #5555;
+            transition-duration: 0.3s;
             border:none;
             outline:none;
         }
@@ -68,7 +74,7 @@ nav{
     color:white;
     cursor:pointer;
     height:35px;
-    margin-top:11px;
+    margin-top:15px;
     width:40px;
     border-radius:5px;
     outline:none;
@@ -77,7 +83,7 @@ nav{
 }
 #search:hover{
     transition-duration: 0.3s;
-    background-color: #555;
+    background-color: #5555;
     border-radius:5px;
     color:white;
 }
@@ -161,4 +167,46 @@ main{
   .next {
     right: 0;
   }
+  .white-box p{
+    margin-left:150px;
+    margin-top:30px;
+    font-size:43px;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom:20px;
+  }
+  #modeswitch{
+    cursor:pointer;
+    font-size:20px;
+    margin-top:18px;
+    margin-left:330px;
+    background-color: transparent;
+    outline:none;
+    border:none;
+
+    
+  }
   
+  .dark{
+    transition-duration: 0.3s;
+    background-color: #333;;
+    *{
+        color:#fff;
+    }
+    .logo a{
+        color:#fff;
+    }
+    .search-bar{
+        color:black;
+    }
+    nav ul li:hover{
+        border-bottom: 2px solid #fff;
+    }
+    nav{
+        input[type=search]{
+            &:focus{
+                background-color: white;
+            }
+        }
+    }
+}
