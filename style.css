@@ -275,8 +275,11 @@ footer p{
     margin-left:10%;
 }
 .hamb{
-    display:none;
+    /* display:none; */
 }
 .hamburger{
     display:none;
+}
+.hamnav{
+    /* display:none; */
 }
